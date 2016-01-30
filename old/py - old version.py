@@ -11,7 +11,7 @@ print "Your lottery ticket number for this session is: %i" % RNG
 
 print "Spend your %i points in Strength, Intelligence, and Luck" % skillp
 
-a
+
 print "Points remaining: %i" % skillp
 try:
    s = int(raw_input("Invest how many into Strength?"))

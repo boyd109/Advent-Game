@@ -6,17 +6,21 @@ def isInteger(number):
         int(number)
         return True
     except ValueError:
-        return False
+         return False
         
 def validskillpoint(number):
 	if (number > skillp or number < 0):
-	    while not isInteger(number):
-	        number = raw_input("Enter the number")
-	    else:
-	        number = raw_input("Enter the number")
-	        validskillpoint(int(number))
+		number = raw_input("Please enter a valid number!")
+		intLoop(number)
 	else:
 		return True
+
+def intLoop (number):
+    while not isInteger(number):
+        number = raw_input("Enter the number")
+    else:
+        validskillpoint(int(number))
+
 		
 name = raw_input("What is your name")
 
@@ -31,31 +35,27 @@ print "Spend your %i points in Strength, Intelligence, and Luck" % skillp
 
 # Strength Points
 print "Points remaining: %i" % skillp
-number = int(raw_input("Invest how many into Strength?"))
-while not isInteger(number):
-    number = raw_input("Enter the number")
-else:
-    validskillpoint(int(number))
+number = raw_input("Invest how many into Strength?")
+intLoop(number)
+number = int(number)
+s = number
 skillp = skillp - number
 
-
-
 # Intelligence Points
-
-
 print "Points remaining: %i" % skillp
-i = int(raw_input("Invest how many into Intelligence?"))
-while i > skillp or i < 0:
-	print "Error"
-	i = int(raw_input("Invest how many into Intelligence?"))
-skillp = skillp - i
+number = int(raw_input("Invest how many into Intelligence?"))
+intLoop(number)
+number = int(number)
+i = number
+skillp = skillp - number
 
+# Luck Points
 print "Points remaining: %i" % skillp
-l = int(raw_input("Invest how many into Luck?"))
-while l > skillp or l < 0:
-	print "Error"
-	l = int(raw_input("Invest how many into Luck?"))
-skillp = skillp - l
+number = int(raw_input("Invest how many into Luck?"))
+intLoop(number)
+number = int(number)
+i = number
+skillp = skillp - number
 
 time.sleep(1)
 print "You stats are Strength: %i, Intelligence: %i, Luck:, %l" % (s,i,l)

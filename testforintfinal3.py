@@ -22,7 +22,4 @@ def intLoop (number):
 
 number = raw_input("Int?")
 
-while not isInteger(number):
-        number = raw_input("Enter the number")
-else:
-        validskillpoint(int(number))
+intLoop(number)
