@@ -13,7 +13,7 @@ def validskillpoint(number):
 		number = raw_input("Please enter a valid number!")
 		intLoop(number)
 	else:
-		return True
+		return number
 
 def intLoop (number):
     while not isInteger(number):
@@ -54,10 +54,10 @@ print "Points remaining: %i" % skillp
 number = int(raw_input("Invest how many into Luck?"))
 intLoop(number)
 number = int(number)
-i = number
+l = number
 skillp = skillp - number
 
 time.sleep(1)
-print "You stats are Strength: %i, Intelligence: %i, Luck:, %l" % (s,i,l)
+print "You stats are Strength: %i, Intelligence: %i, Luck:, %i" % (s,i,l)
 time.sleep(1)
 print "Start"
