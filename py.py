@@ -30,9 +30,9 @@ RNG = random.randint(0,100)
 print "Hello %s" % name
 time.sleep(1)
 print "Your lottery ticket number for this session is: %i" % RNG
-
+time.sleep(1)
 print "Spend your %i points in Strength, Intelligence, and Luck" % skillp
-
+time.sleep(1)
 # Strength Points
 print "Points remaining: %i" % skillp
 number = raw_input("Invest how many into Strength?")
@@ -57,7 +57,10 @@ number = int(number)
 l = number
 skillp = skillp - number
 
-time.sleep(1)
 print "You stats are Strength: %i, Intelligence: %i, Luck:, %i" % (s,i,l)
 time.sleep(1)
 print "Start"
+
+print "You have been adventuring for days on end, with no food or water."
+print "Up ahead you see what looks to be a pool of water"
+print "Do you (A) Go to the lake or (B) Keep moving?"
