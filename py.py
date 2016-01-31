@@ -35,6 +35,7 @@ print "Spend your %i points in Strength, Intelligence, and Luck" % skillp
 time.sleep(1)
 # Strength Points
 print "Points remaining: %i" % skillp
+time.sleep(1)
 number = raw_input("Invest how many into Strength?")
 intLoop(number)
 number = int(number)
@@ -43,6 +44,7 @@ skillp = skillp - number
 
 # Intelligence Points
 print "Points remaining: %i" % skillp
+time.sleep(1)
 number = int(raw_input("Invest how many into Intelligence?"))
 intLoop(number)
 number = int(number)
@@ -51,6 +53,7 @@ skillp = skillp - number
 
 # Luck Points
 print "Points remaining: %i" % skillp
+time.sleep(1)
 number = int(raw_input("Invest how many into Luck?"))
 intLoop(number)
 number = int(number)
@@ -63,4 +66,5 @@ print "Start"
 
 print "You have been adventuring for days on end, with no food or water."
 print "Up ahead you see what looks to be a pool of water"
-print "Do you (A) Go to the lake or (B) Keep moving?"
+print "Do you (1) Go to the lake or (2) Keep moving?"
+c1 = raw_input("Choose by inputting 1 or 2.")
