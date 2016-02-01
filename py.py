@@ -9,7 +9,7 @@ def isInteger(number):
          return False
         
 def validskillpoint(number):
-	if (number > skillp or number < 0):
+	if number > skillp or number < 0:
 		number = raw_input("Please enter a valid number!")
 		intLoop(number)
 	else:
