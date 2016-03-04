@@ -64,4 +64,4 @@ print "Start"
 print "Please enter all choice with a single number. For example : 2"
 print "You have been adventuring for days on end, with no food or water."
 print "Up ahead you see what looks to be a pool of water"
-print "Do you (1) 
+print "Do you: (1) Grab some water in your water bottle? (2) Drink straight from the river ?
