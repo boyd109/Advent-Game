@@ -76,7 +76,9 @@ c1 = int(raw_input("Do you: (1) Grab some water in your water bottle? (2) Drink 
 l = 3
 chance = random.randint(0, 3)
 if chance + c1 > l:
-    print "Sorry you died."
+    print "The inside of your throat starts to itch and you feel a burning sensation."
+    print "The water must have been contaminated, and now you died."
+    print "The End"
     sys.exit()
 else:
     print "You continue on with some water."
@@ -87,3 +89,14 @@ print "You adventure until you reach a small town late in the night."
 print "It has been a tiring day and you are not sure what tomorrow holds."
 #Second Choice
 c2 = int(raw_input("You have the choice to (1) look for a place to rest (2) Explore the town."))
+s = 4
+chance = random.randint(0, 3)
+if c2 = 1:
+    print "You find a local hotel that gives you a room."
+    print "After settling down, you lie on the bed and sleep."
+    print "
+if chance + c2 > s:
+    print "Sorry you died."
+    sys.exit()
+else:
+    print "You continue on with some water."
