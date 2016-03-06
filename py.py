@@ -68,16 +68,18 @@ import sys
 # Start of the Game
 print "Please enter all choice with a single number. For example : 2"
 print "You have been adventuring for days on end, with no food or water."
-print "Up ahead you see what looks to be a pool of water"
+print "Up ahead you see what looks to be a pool of water."
+
 #First Choice
-c1 = int(raw_input("Do you: (1) Grab some water in your water bottle? (2) Drink straight from the river?"))
+c1 = int(raw_input("(1) Grab some water in your water bottle (2) Drink straight from the river"))
 
 #time.sleep(1)
 l = 3
-chance = random.randint(0, 3)
+chance = random.randint(0, 2)
 if chance + c1 > l:
     print "The inside of your throat starts to itch and you feel a burning sensation."
     print "The water must have been contaminated, and now you died."
+    time.sleep(1)
     print "The End"
     sys.exit()
 else:
@@ -87,16 +89,44 @@ else:
 
 print "You adventure until you reach a small town late in the night."
 print "It has been a tiring day and you are not sure what tomorrow holds."
+
 #Second Choice
-c2 = int(raw_input("You have the choice to (1) look for a place to rest (2) Explore the town."))
+c2 = int(raw_input("(1) look for a place to rest (2) Explore the town"))
 s = 4
-chance = random.randint(0, 3)
-if c2 = 1:
+chance = random.randint(0, 2)
+
+if c2 == 1:
     print "You find a local hotel that gives you a room."
     print "After settling down, you lie on the bed and sleep."
-    print "
-if chance + c2 > s:
-    print "Sorry you died."
+    print "In the night you hear steps in the hallway"
+    print "Suddenly, you are grabbed and you black out before noticing anything"
+    time.sleep(1)
+    print "The End"
     sys.exit()
-else:
-    print "You continue on with some water."
+    
+if c2 == 2:
+    if chance + c2 > s:
+        print "Some armed thugs surround you."
+        print "Some carry knives, others carry crude pipes and baseball bats."
+        print "Outnumbered, you succumb to defeat."
+        time.sleep(1)
+        print "The End"
+        sys.exit()
+        
+if c3 == 1:
+    print "The brightly lit streets illuminate your path."
+    print "One vendor asks if you would like to buy something at their shop"
+    print "After politely saying no, you notice a small handgun pointed underneath you."
+    
+#Third Choice
+c3 = int(raw_input("(1) Try to run (2) Try to talk calmly to the vendor"))
+i = 3
+if c3 == 1:
+    print "You start to run, and hear POP POP POP"
+    print "You fall to the ground"
+    time.sleep(1)
+    print "The End"
+    sys.exit()
+
+if c3 == 2:
+    print "You start to run, and hear POP POP POP"
