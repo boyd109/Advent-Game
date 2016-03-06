@@ -64,7 +64,8 @@ print "You stats are Strength: %i, Intelligence: %i, Luck:, %i" % (s,i,l)
 time.sleep(1)
 print "Start"
 
+print "Please enter all choice with a single number. For example : 2"
 print "You have been adventuring for days on end, with no food or water."
 print "Up ahead you see what looks to be a pool of water"
-print "Do you (1) Go to the lake or (2) Keep moving?"
-c1 = raw_input("Choose by inputting 1 or 2.")
+river = raw_input("Do you: (1) Grab some water in your water bottle? (2) Drink straight from the river?")
+
